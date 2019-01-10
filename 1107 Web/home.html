@@ -1,0 +1,9 @@
+<html>
+<h1> Welcome - Angular </h1>
+
+Search term: {{ search }}
+<ul>
+    <li ng-repeat='video in videos' style="list-style-type:none; float:left; padding: 16px"><img style="width:200px; height:200px" src='../images/{{video._id}}.jpg'><br> {{video.title}} </li> <!-- {{}} is used by angular -->
+</ul>
+
+</html>

@@ -1,0 +1,17 @@
+<h1>Add a Video</h1>
+
+<!-- The ng-model attribute is another directive that we use for data binding. -->
+<!-- For example, when the value of title text box is changed, Angular will automatically set it in $scope.video.title. -->
+<form>
+    <div class="form-group">
+        <label>Title</label>        
+        <input class="form-control" ng-model="video.title"></input>  
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <textarea class="form-control" ng-model="video.description"></textarea>
+    </div>
+    <!-- The ng-click attribute is yet another Angular directive that we use to handle the click event of HTML elements. -->
+    <!-- we’re telling Angular that if the user clicks this button, it should execute the save method on the $scope, which we defined in vidzy.js. -->
+    <input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
+</form>

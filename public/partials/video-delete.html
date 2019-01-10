@@ -1,0 +1,16 @@
+<h1>Delete a Video</h1>
+
+<!-- The ng-model attribute is another directive that we use for data binding. -->
+<!-- For example, when the value of title text box is changed, Angular will automatically set it in $scope.video.title. -->
+<p>
+    Are you sure you want to delete this video?
+</p>
+<ul>
+    <li>Title: {{video.title}}</li>
+    <li>Description: {{video.description}}</li>
+</ul>
+    <!-- The ng-click attribute is yet another Angular directive that we use to handle the click event of HTML elements. -->
+    <!-- we’re telling Angular that if the user clicks this button, it should execute the save method on the $scope, which we defined in vidzy.js. -->
+    <input type="button" value="Yes, Delete" class="btn btn-danger" ng-click="delete()" />
+    <a class="btn btn-default" href="/#/">No, Go Back</a>
+</form>
